@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_res_download_moments 20-18-27-115" translatesAutoresizingMaskIntoConstraints="NO" id="Kkj-D0-wX1">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="ojg-vn-LMi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LbG-y1-eCg">
+                                <rect key="frame" x="277" y="408" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="hhhh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KDb-l2-npn"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon64_wx_logo 00-17-08-873" translatesAutoresizingMaskIntoConstraints="NO" id="6xN-tH-xa7">
+                                <rect key="frame" x="250" y="250" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kkj-D0-wX1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5g5-9r-0zB"/>
+                            <constraint firstItem="LbG-y1-eCg" firstAttribute="top" secondItem="Kkj-D0-wX1" secondAttribute="bottom" constant="58" id="KKf-W7-5Gc"/>
+                            <constraint firstItem="Kkj-D0-wX1" firstAttribute="centerX" secondItem="LbG-y1-eCg" secondAttribute="centerX" id="ULS-Mt-ubz"/>
+                            <constraint firstItem="Kkj-D0-wX1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WLQ-6m-Kf1"/>
+                            <constraint firstItem="Kkj-D0-wX1" firstAttribute="bottom" secondItem="6xN-tH-xa7" secondAttribute="bottom" id="ckg-ma-nBB"/>
+                            <constraint firstItem="6xN-tH-xa7" firstAttribute="leading" secondItem="Kkj-D0-wX1" secondAttribute="leading" id="kcE-Hm-j41"/>
+                            <constraint firstItem="6xN-tH-xa7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="230" id="n6N-ZS-Bxp"/>
+                            <constraint firstItem="6xN-tH-xa7" firstAttribute="trailing" secondItem="Kkj-D0-wX1" secondAttribute="trailing" id="sfi-SL-FGa"/>
+                            <constraint firstItem="6xN-tH-xa7" firstAttribute="top" secondItem="Kkj-D0-wX1" secondAttribute="top" id="u4X-BC-yER"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Kkj-D0-wX1" id="YLK-9Z-KuO"/>
+                        <outlet property="imageview2" destination="6xN-tH-xa7" id="CYT-Gt-7e1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon64_wx_logo 00-17-08-873" width="64" height="64"/>
+        <image name="icon_res_download_moments 20-18-27-115" width="300" height="300"/>
+    </resources>
+</document>
